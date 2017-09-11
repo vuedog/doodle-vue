@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Vue template</p>
+    <p>Doodle Vue</p>
     <p>{{ template }}</p>
   </div>  
 </template>
@@ -8,7 +8,7 @@
 <script>
 export default {
   data () {
-    return {template: 'Woo'}
+    return {template: 'Learning Vue'}
   }
 }
 </script>
