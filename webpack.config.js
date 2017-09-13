@@ -9,6 +9,7 @@ const resolve = file => path.resolve(__dirname, file)
 const banner = `All rights reserved. Author: ${pkgInfo.author} License: ${pkgInfo.license}`
 
 const commonConfig = {
+  entry: resolve('src/index.js'),
   output: {
     path: resolve('dist')
   },
@@ -53,19 +54,17 @@ const commonConfig = {
 
 module.exports = [
   mergeConfig(commonConfig, {
-    entry: resolve('src/plugin.js'),
     output: {
-      filename: 'doodle-vue.min.js',
-      libraryTarget: 'window',
-      library: 'DoodleVue'
+      filename: 'vd-doodle.min.js',
+      libraryTarget: 'umd',
+      library: 'VDDoodle'
     }
   }),
   mergeConfig(commonConfig, {
-    entry: resolve('src/Doodle.vue'),
     output: {
-      filename: 'doodle-vue.js',
+      filename: 'vd-doodle.js',
       libraryTarget: 'umd',
-      library: 'doodle-vue',
+      library: 'vd-doodle',
       umdNamedDefine: true
     }
   })
