@@ -2,8 +2,8 @@
   "name": "doodle-vue",
   "version": "1.0.3",
   "description": "Doodle with vue [For learning vue.js]",
-  "main": "dist/doodle-vue.js",
-  "module": "dist/doodle-vue.js",
+  "main": "dist/vd-doodle.js",
+  "module": "dist/vd-doodle.js",
   "scripts": {
     "build": "rimraf ./dist && webpack",
     "watch": "webpack --watch",
