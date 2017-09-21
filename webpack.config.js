@@ -57,15 +57,15 @@ module.exports = [
     output: {
       filename: 'vd-doodle.min.js',
       libraryTarget: 'umd',
-      library: 'VDDoodle'
+      library: 'VDDoodle',
+      libraryExport: 'default'
     }
   }),
   mergeConfig(commonConfig, {
     output: {
       filename: 'vd-doodle.js',
       libraryTarget: 'umd',
-      library: 'vd-doodle',
-      umdNamedDefine: true
+      library: 'vd-doodle'
     }
   })
 ]

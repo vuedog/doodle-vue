@@ -1,14 +1,14 @@
 <template>
   <div>
-    <p>Doodle Vue</p>
     <p>{{ template }}</p>
   </div>  
 </template>
 
 <script>
 export default {
+  props: ['msg'],
   data () {
-    return {template: 'Learning Vue'}
+    return {template: this.msg || 'default msg'}
   }
 }
 </script>

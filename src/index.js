@@ -1,9 +1,5 @@
 import Doodle from './Doodle'
 
-const install = (Vue) => { Vue.component('vd-doodle', Doodle) }
-
-export {
-  install
-}
+Doodle.install = (Vue) => { Vue.component('vd-doodle', Doodle) }
 
 export default Doodle
