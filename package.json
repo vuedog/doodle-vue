@@ -1,6 +1,6 @@
 {
   "name": "doodle-vue",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Doodle with vue [For learning vue.js]",
   "main": "dist/vd-doodle.js",
   "module": "dist/vd-doodle.js",
