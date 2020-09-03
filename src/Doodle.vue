@@ -1,14 +1,16 @@
 <template>
   <div>
-    <p>{{ template }}</p>
+    <p>{{ msg }}</p>
   </div>  
 </template>
 
 <script>
 export default {
-  props: ['msg'],
-  data () {
-    return {template: this.msg || 'default msg'}
+  props: {
+    msg: {
+      type: String,
+      default: 'Hello Vue'
+    }
   }
 }
 </script>

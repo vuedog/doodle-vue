@@ -10,7 +10,8 @@
   </head>
   <body>
     <div id="demo">
-      <vd-doodle msg="Hi, doodle-vue"/>
+      <input v-model="msg" placeholder="doodle me">
+      <vd-doodle :msg="msg"></vd-doodle>
     </div>
     <script src="./doodle-vue.js"></script>
   </body>
