@@ -55,7 +55,7 @@
     "vue-test-utils": "git+https://github.com/vuejs/vue-test-utils.git",
     "webpack": "^4.44.1",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^5.1.4"
   },
   "jest": {
     "moduleFileExtensions": [
